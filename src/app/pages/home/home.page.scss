@@ -1,0 +1,16 @@
+.text-container {
+  text-align: center;
+}
+
+.form-container pre {
+  display: inline-block;
+}
+
+.json{
+  display: inline-block;
+  text-align: left;
+  font-family: monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-width: 70vh;
+}

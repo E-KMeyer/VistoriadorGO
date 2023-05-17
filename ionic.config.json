@@ -1,0 +1,7 @@
+{
+  "name": "vist",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

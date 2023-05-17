@@ -1,0 +1,75 @@
+.cadastro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  margin-top: 25px;
+}
+
+.logoForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto; 
+}
+
+.cadastro-form {
+  background-color: #ffffff75;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px; /* Limita a largura máxima do formulário */
+  width: 100%; /* Adiciona largura total */
+  text-align: center;
+}
+
+/* Restante do código permanece o mesmo */
+
+
+.cadastro-form {
+  background-color: #ffffff75;
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+  text-align: center;
+}
+
+.cadastro-form h2 {
+  margin-bottom: 20px;
+}
+
+.cadastro-form form ion-item {
+  margin-bottom: 16px;
+}
+
+.cadastro-form ion-button {
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+.cadastro-form form .divider {
+  margin: 16px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.cadastro-form form a {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+}
+
+ion-button {
+  --background: #65b6db;
+  --color: rgb(2, 2, 5);
+  --border-radius: 8px;
+}
+
+button {
+  background: #65b6db;
+  color: rgb(2, 2, 5);
+  padding: 4px;
+  border-color: #ccc;
+  margin-bottom: 8px;
+  margin-top: -6px;
+}

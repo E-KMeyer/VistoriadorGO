@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="login-page">
+    <div class="login-form">
+      <h2>Login</h2>
+      <form>
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="email" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Senha</ion-label>
+          <ion-input type="password" required></ion-input>
+        </ion-item>
+
+        <ion-button href="../home/">Entrar</ion-button>
+        <ion-button href="../cadastro/" class="signup-button">Cadastrar</ion-button>
+        <div class="divider"></div>
+        <a href="../reset-password/">Esqueceu a senha?</a>
+        <div class="divider"></div>
+        <a href="../reset-password/">Consultar cadastro</a>
+
+
+      </form>
+    </div>
+  </div>
+</ion-content>

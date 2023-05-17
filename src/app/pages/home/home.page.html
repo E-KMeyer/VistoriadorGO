@@ -1,0 +1,16 @@
+<ion-content [fullscreen]="true" class="content-container">
+  <div class="text-container">
+    <h1>Você está aguardando aprovação</h1>
+    <ion-button (click)="pegarFormulario()" class="centered-button">Clique aqui para visualizar os dados enviados</ion-button>
+    <ion-button href="../login/">Clique para voltar</ion-button>
+  </div>
+  <div class="text-container form-container">
+  <div *ngIf="formulario">
+
+    <div class="json">
+     <code><a> {{ formulario | json }} </a></code>  
+    </div>
+    
+  </div>
+  </div>
+</ion-content>

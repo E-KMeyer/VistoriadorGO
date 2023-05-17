@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Cadastro
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <div class="cadastro">
+    <div class="cadastro-form">
+      <div class="logoForm">
+        <img src="../../../assets/imgs/logo2.png">
+      </div>
+
+  <form (ngSubmit)="cadastrarUsuario()">
+    <ion-item>
+      <ion-label position="floating">Nome completo</ion-label>
+      <ion-input type="text" required [(ngModel)]="nome" name="nome"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">CPF</ion-label>
+      <ion-input type="number" required [(ngModel)]="cpf" name="cpf"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">RG</ion-label>
+      <ion-input type="text" required [(ngModel)]="rg" name="rg"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Telefone</ion-label>
+      <ion-input type="number" required [(ngModel)]="telefone" name="telefone"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Endereço (Rua, Nº, Bairro, Cidade, Estado)</ion-label>
+      <ion-input type="text" [(ngModel)]="endereco" name="endereco"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">CNH</ion-label>
+      <ion-input type="text" required [(ngModel)]="cnh" name="cnh"></ion-input>
+    </ion-item>
+
+      
+      <ion-item class="capture">
+        <ion-label position="floating">Documento com foto</ion-label><br><br>
+        <label class="custom-file-upload">
+          <input type="file" id="fileInput" accept="image/*" [(ngModel)]="foto" name="foto" #fileInput="ngModel" required>
+          Anexar imagem 
+        </label>
+      </ion-item>
+      <div *ngIf="fileInput.invalid && (fileInput.dirty || fileInput.touched)" class="validation-error">
+        Por favor, selecione um arquivo.
+      </div>
+   
+    <ion-item>
+      <ion-label position="floating">Login</ion-label>
+      <ion-input type="text" required [(ngModel)]="login" name="login"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password" required [(ngModel)]="senha" name="senha"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Confirme a senha</ion-label>
+      <ion-input type="password" required [(ngModel)]="confirmarSenha" name="confirmarSenha"></ion-input>
+    </ion-item>
+
+    <div class="button-group">
+      <ion-button href="../login/">Cancelar</ion-button>
+      <ion-button type="submit">Enviar</ion-button>
+    </div>
+      </form>
+
+  </div>
+  </div>
+</ion-content>
